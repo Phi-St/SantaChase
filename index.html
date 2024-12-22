@@ -9,7 +9,7 @@
         <link rel="apple-touch-icon" href="icon/icon.png">
         <link rel="stylesheet" type="text/css" href="css/game.css">
         <title>Santa Chase!</title>
-        <style>
+	<style>
             .santa-container {
                 position: fixed;
                 bottom: 10px;
@@ -38,10 +38,10 @@
                 height: 100%;
                 object-fit: cover;
             }
-        </style>
+        </style>			 
     </head>
     <body style="background-color: black">
-        <div class="santa-container">
+	<div class="santa-container">
             <!-- Copyable String -->
             <div class="santa-text" onclick="copyToClipboard('ChaseSantaCA')">
                 ChaseSantaCA
@@ -51,8 +51,8 @@
                 <img src="X/XACC.jpg" alt="Chase Santa">
             </a>
         </div>
-
-        <script type="text/javascript">
+        <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
             // Function to copy text to clipboard
             function copyToClipboard(text) {
                 navigator.clipboard.writeText(text).then(() => {
