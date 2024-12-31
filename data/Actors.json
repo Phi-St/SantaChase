@@ -1,5 +1,5 @@
 [
 null,
-{"id":1,"battlerName":"Actor1_1","characterIndex":4,"characterName":"Christmas Nutcracker","classId":1,"equips":[15,32,33],"faceIndex":0,"faceName":"8809315","traits":[{"code":51,"dataId":1,"value":1},{"code":52,"dataId":1,"value":1},{"code":52,"dataId":2,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Player","nickname":"","note":"","profile":""},
+{"id":1,"battlerName":"Actor1_1","characterIndex":0,"characterName":"Trump Character","classId":1,"equips":[15,32,33],"faceIndex":0,"faceName":"8809315","traits":[{"code":51,"dataId":1,"value":1},{"code":52,"dataId":1,"value":1},{"code":52,"dataId":2,"value":1}],"initialLevel":1,"maxLevel":99,"name":"Player","nickname":"","note":"","profile":""},
 {"id":2,"battlerName":"","characterIndex":0,"characterName":"","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"title","nickname":"","note":"","profile":""}
 ]

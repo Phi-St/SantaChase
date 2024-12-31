@@ -10,37 +10,58 @@
         <link rel="stylesheet" type="text/css" href="css/game.css">
         <title>Santa Chase!</title>
         <style>
-            .santa-link {
+            .santa-container {
                 position: fixed;
                 bottom: 10px;
                 left: 10px;
                 z-index: 9999;
-                width: 80px; /* Increased width */
-                height: 80px; /* Increased height */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .santa-text {
+                color: white;
+                font-size: 14px;
+                margin-bottom: 5px;
+                background-color: rgba(0, 0, 0, 0.7);
+                padding: 5px 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                user-select: text; /* Enables text selection for copying */
+            }
+            .santa-link {
+                width: 80px;
+                height: 80px;
             }
             .santa-link img {
-                width: 100%; /* Ensure the image fits within the container */
-                height: 100%; /* Ensure the image fits within the container */
-                object-fit: cover; /* Keeps the image aspect ratio */
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         </style>
     </head>
     <body style="background-color: black">
+	<script type="text/javascript" src="js/main.js"></script>
         <div class="santa-container">
             <!-- Copyable String -->
-            <div class="santa-text" onclick="copyToClipboard('2EdgXfFvyveR6Evx5MXa8k52e64jPSTuCukM4mLmpump')">
-                2EdgXfFvyveR6Evx5MXa8k52e64jPSTuCukM4mLmpump
+            <div class="santa-text" onclick="copyToClipboard('Copy CA')">
+                Copy CA
             </div>
             <!-- Clickable Link -->
             <a class="santa-link" href="https://x.com/ChaseSanta2179" target="_blank">
                 <img src="X/XACC.jpg" alt="Chase Santa">
             </a>
         </div>
-    <body style="background-color: black">
-        <a class="santa-link" href="https://x.com/ChaseSanta2179" target="_blank">
-            <img src="X_ACC.jpg" alt="Chase Santa">
-        </a>
-        
-        <script type="text/javascript" src="js/main.js" defer></script>
+
+        <script type="text/javascript">
+            // Function to copy text to clipboard
+            function copyToClipboard(text) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('Copied to clipboard: ' + text);
+                }).catch(err => {
+                    console.error('Failed to copy: ', err);
+                });
+            }
+        </script>
     </body>
 </html>
